@@ -1,0 +1,84 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+}
+
+.header {
+  position: relative;
+  height: 100vh;
+  min-height: 100vh;
+  background: gray;
+  overflow: hidden;
+}
+
+.header .bg-img {
+  background-image: url("/public/images/wood.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.header .container-fluid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 0 !important;
+}
+
+.header .container-fluid .logo-font {
+  width: 37rem;
+  margin-bottom: 1rem;
+}
+
+.header .container-fluid .logo-bottom {
+  width: 37rem;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .container-fluid .logo-bottom .business-time {
+  text-align: left;
+  color: white;
+  font-size: 1rem;
+  width: 50%;
+}
+
+.header .container-fluid .logo-bottom .business-time .title {
+  font-size: 2rem;
+}
+
+.header .container-fluid .logo-bottom .business-time .table {
+  color: white;
+}
+
+.header .container-fluid .logo-bottom .business-time .table tr th, .header .container-fluid .logo-bottom .business-time .table tr td {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.header .container-fluid .logo-bottom .call-info {
+  font-size: 1.3rem;
+  width: 50%;
+  padding-top: 0.6em;
+  text-align: right;
+  color: white;
+}
+
+.header .container-fluid .logo-bottom .call-info .info {
+  margin-bottom: -0.5em;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  :root {
+    font-size: 80%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
