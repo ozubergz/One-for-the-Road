@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
 
 //Menu route
 app.get('/menu', (req, res) => {
-  res.render("menu")
+  res.render("menu");
 });
 
 
