@@ -67,7 +67,7 @@ html, body {
 }
 
 .header .container-fluid .logo-bottom .call-info {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   width: 50%;
   padding-top: 0.6em;
   text-align: right;
@@ -93,20 +93,22 @@ html, body {
 .bg-1 {
   height: auto;
   min-height: 100vh;
-  background-color: gray;
+  background-color: #f0d7a1;
+  overflow: hidden;
 }
 
 .bg-1 .headings {
-  background-color: rgba(255, 192, 203, 0.671);
-  font-size: 1.3rem;
+  color: #444444;
+  font-weight: bold;
+  font-size: 1.2rem;
   font-family: 'Montserrat', sans-serif;
-  text-align: center;
+  text-align: left;
   padding: 1em;
 }
 
 .bg-1 .headings .btn {
-  background-color: white;
-  color: black;
+  background-color: #525252;
+  color: white;
   border-radius: 0;
   border: none !important;
   -webkit-box-shadow: none !important;
@@ -115,6 +117,27 @@ html, body {
 
 .bg-1 .headings .btn:active {
   background-color: black !important;
+}
+
+.bg-1 .menu-group {
+  padding: 0;
+  margin: 0;
+}
+
+.bg-1 .menu-group .menu {
+  height: 30vh;
+}
+
+.bg-1 .menu-group .menu .img {
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
