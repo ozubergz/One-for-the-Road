@@ -82,48 +82,76 @@ html, body {
 .bg-1 {
   height: auto;
   min-height: 100vh;
-  background-color: #f0d7a1;
+  background-color: white;
   overflow: hidden;
-  .headings {
+  hr {
+    border-width: 3px;
+    border-color: rgb(68, 68, 68);
+    width: 50%;
+    // padding: 1rem;
+  }
+  .heading {
     color: rgb(68, 68, 68);
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-family: 'Montserrat', sans-serif;
-    text-align: left;
-    padding: 1em;
-    .btn {
-      background-color: rgb(82, 82, 82);
-      color: white;
-      border-radius: 0;
-      border: none !important;
-      box-shadow: none !important;
-      &:active {
-        background-color: black !important;
-      }
-    }
+    text-align: center;
+    // padding: 1em;
+    // .btn {
+    //   background-color: rgb(82, 82, 82);
+    //   color: white;
+    //   border-radius: 0;
+    //   border: none !important;
+    //   box-shadow: none !important;
+    //   &:active {
+    //     background-color: black !important;
+    //   }
+    // }
   }
   .menu-group {
     padding: 0;
     margin: 0;
-    .menu {
-      height: 30vh;      
-      .img {
-        padding: 1rem;
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
+    .row {
+      margin: auto;
+      .menu {
+        width: 10%;
+        height: 60vh;
+        background-color: gray;
+        overflow: hidden;
+        &:hover{
+          border: 4px solid rgb(246, 166, 101);
+          cursor: pointer;
+        }
+        .img {
+          padding: 1rem;
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        .overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          background-color: rgba(0, 0, 0, 0.5);
+          font-family: 'Montserrat', sans-serif;
+          color: white;
+          h3 {
+            position: absolute;
+            left: 0.2em;
+            bottom: 0;
+          }
+        }
       }
     }
   }
-
 }
-
-
 
 
 

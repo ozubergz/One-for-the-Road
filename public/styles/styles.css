@@ -93,30 +93,22 @@ html, body {
 .bg-1 {
   height: auto;
   min-height: 100vh;
-  background-color: #f0d7a1;
+  background-color: white;
   overflow: hidden;
 }
 
-.bg-1 .headings {
+.bg-1 hr {
+  border-width: 3px;
+  border-color: #444444;
+  width: 50%;
+}
+
+.bg-1 .heading {
   color: #444444;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-family: 'Montserrat', sans-serif;
-  text-align: left;
-  padding: 1em;
-}
-
-.bg-1 .headings .btn {
-  background-color: #525252;
-  color: white;
-  border-radius: 0;
-  border: none !important;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
-}
-
-.bg-1 .headings .btn:active {
-  background-color: black !important;
+  text-align: center;
 }
 
 .bg-1 .menu-group {
@@ -124,11 +116,23 @@ html, body {
   margin: 0;
 }
 
-.bg-1 .menu-group .menu {
-  height: 30vh;
+.bg-1 .menu-group .row {
+  margin: auto;
 }
 
-.bg-1 .menu-group .menu .img {
+.bg-1 .menu-group .row .menu {
+  width: 10%;
+  height: 60vh;
+  background-color: gray;
+  overflow: hidden;
+}
+
+.bg-1 .menu-group .row .menu:hover {
+  border: 4px solid #f6a665;
+  cursor: pointer;
+}
+
+.bg-1 .menu-group .row .menu .img {
   padding: 1rem;
   position: absolute;
   top: 0;
@@ -138,6 +142,23 @@ html, body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.bg-1 .menu-group .row .menu .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+.bg-1 .menu-group .row .menu .overlay h3 {
+  position: absolute;
+  left: 0.2em;
+  bottom: 0;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
