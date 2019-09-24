@@ -93,8 +93,6 @@ html, body {
 .bg-1 {
   height: auto;
   min-height: 100vh;
-  background-color: white;
-  overflow: hidden;
 }
 
 .bg-1 hr {
@@ -111,54 +109,28 @@ html, body {
   text-align: center;
 }
 
-.bg-1 .menu-group {
+.bg-1 .main-menu {
   padding: 0;
   margin: 0;
 }
 
-.bg-1 .menu-group .row {
-  margin: auto;
+.bg-1 .main-menu .side-bar {
+  font-family: "Noto Serif", sans-serif;
+  width: 24%;
 }
 
-.bg-1 .menu-group .row .menu {
-  width: 10%;
-  height: 60vh;
-  background-color: gray;
-  overflow: hidden;
+.bg-1 .main-menu .side-bar .menu-category {
+  list-style: none;
 }
 
-.bg-1 .menu-group .row .menu:hover {
-  border: 4px solid #f6a665;
+.bg-1 .main-menu .side-bar .menu-category .list {
+  font-size: 1.4rem;
+  margin-bottom: 0.5em;
+}
+
+.bg-1 .main-menu .side-bar .menu-category .list:hover {
   cursor: pointer;
-}
-
-.bg-1 .menu-group .row .menu .img {
-  padding: 1rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.bg-1 .menu-group .row .menu .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  font-family: 'Montserrat', sans-serif;
-  color: white;
-}
-
-.bg-1 .menu-group .row .menu .overlay h3 {
-  position: absolute;
-  left: 0.2em;
-  bottom: 0;
+  color: #2b6db8;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
