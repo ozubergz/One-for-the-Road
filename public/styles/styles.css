@@ -112,11 +112,14 @@ html, body {
 .bg-1 .main-menu {
   padding: 0;
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .bg-1 .main-menu .side-bar {
   font-family: "Noto Serif", sans-serif;
-  width: 24%;
+  width: 23%;
 }
 
 .bg-1 .main-menu .side-bar .menu-category {
@@ -124,13 +127,52 @@ html, body {
 }
 
 .bg-1 .main-menu .side-bar .menu-category .list {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   margin-bottom: 0.5em;
 }
 
 .bg-1 .main-menu .side-bar .menu-category .list:hover {
   cursor: pointer;
   color: #2b6db8;
+}
+
+.bg-1 .main-menu .menu-content {
+  width: 55%;
+}
+
+.bg-1 .main-menu .menu-content .menu-header {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.bg-1 .main-menu .menu-content .menu-list {
+  font-family: "Noto Serif", sans-serif;
+}
+
+.bg-1 .main-menu .menu-content .menu-list .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bg-1 .main-menu .menu-content .menu-list .item .item-body {
+  width: 72%;
+}
+
+.bg-1 .main-menu .menu-content .menu-list .item .item-body .sub-list {
+  padding-left: 1rem;
+}
+
+.bg-1 .main-menu .menu-content .menu-list .item .item-body .sub-list p:not(:last-child) {
+  margin-bottom: -0.2rem;
+}
+
+.bg-1 .main-menu .menu-content .menu-list .item .price {
+  width: 20%;
+  text-align: right;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {

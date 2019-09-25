@@ -35,52 +35,31 @@ block content
                     button(class="btn btn-primary" id="menu-btn") See Menu
                     div(class='address') 40-25 150th St, Flushing, NY 11354
     div(class="bg-1" id="bg-1")
-        //- div(class="headings")
-        //-     div(class="heading1") Eat Hot and Fresh at the Restaurant.
-        //-     div(class="heading2") Call (347) 732-9732 
-        //-     div(class="heading3") Pick Up / Delivery ($25 up)
-        //-     a(class="btn btn-primary mt-2" href="https://www.google.com/maps/place/One+for+the+Road/@40.7628893,-73.8161002,17z/data=!3m1!4b1!4m5!3m4!1s0x89c261bef542b8d9:0x9a0fde2ddf5c0318!8m2!3d40.7628893!4d-73.8139115" target="_blank") Get Direction
         div(class="heading mt-2") MENU
         hr
         div(class="main-menu mt-2")
-            div(class="container-fluid")
-                div(class="side-bar mt-4")
-                    ul(class="menu-category")
-                        li(class="list") Good Morning!
-                        li(class="list") Hot & Cold Sandwiches
-                        li(class="list") Salads
-                        li(class="list") Peruvian Chicken
-                        li(class="list") Crepes
-                        li(class="list") Desserts
-                        li(class="list") Beverages
-                        
-                    //- div(class="menu-category")
-                        //- div(class="img" style="background-image: url(/public/images/bacon-egg-cheese.jpg)")
-                        //- div(class="overlay")
-                        h4 Good Morning!
-                    //- div(class="menu-category")
-                        //- div(class="img" style="background-image: url(/public/images/sandwich.jpg)")
-                        //- div(class="overlay")
-                        h4 Hot & Cold Sandwiches
-                    //- div(class="menu-category")
-                        //- div(class="img" style="background-image: url(/public/images/salad.jpg)")
-                        //- div(class="overlay")
-                        h4 Salads
-                    //- div(class="menu-category")
-                        //- div(class="img" style="background-image: url(/public/images/bbq-chicken.jpg)")
-                        //- div(class="overlay")
-                        h4 Peruvian Chicken
-                    //- div(class="menu-category")
-                        //- div(class="img" style="background-image: url(/public/images/crepe.jpg)")
-                        //- div(class="overlay")
-                        h4 Crepes
-                    //- div(class="menu-category")
-                        //- div(class="img" style="background-image: url(/public/images/dessert.jpg)")
-                        //- div(class="overlay")
-                        h4 Desserts
-                    //- div(class="menu-category")
-                        //- div(class="img" style="background-image: url(/public/images/beverage.jpg)")
-                        //- div(class="overlay")
-                        h4 Beverages
+            div(class="side-bar mt-4")
+                ul(class="menu-category")
+                    li(class="list" data-linked="breakfast") Good Morning!
+                    li(class="list" data-linked="brunch") Brunch
+                    li(class="list" data-linked="hot-sandwiches") Hot Sandwiches
+                    li(class="list" data-linked="cold-sandwiches") Cold Sandwiches
+                    li(class="list" data-linked="salads") Salads
+                    li(class="list" data-linked="peru-chicken") Peruvian Chicken
+                    li(class="list" data-linked="crepes") Crepes
+                    li(class="list") Desserts
+                    li(class="list") Beverages
+            div(class="menu-content mt-4")
+                include menu/breakfast.pug
+                include menu/brunch.pug
+                include menu/hot-sandwiches.pug
+                include menu/cold-sandwiches.pug
+                include menu/salads.pug
+                include menu/peru-chicken.pug
+                include menu/crepes.pug
+                   
+                            
+            
+
             
 

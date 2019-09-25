@@ -96,18 +96,49 @@ html, body {
   .main-menu {
     padding: 0;
     margin: 0;
+    display: flex;
     .side-bar {
       font-family: "Noto Serif", sans-serif;
-      width: 24%;
+      width: 23%;
       // background-color: rgba(255, 192, 203, 0.698);
       .menu-category {
         list-style: none;
         .list {
-          font-size: 1.4rem;
+          font-size: 1.3rem;
           margin-bottom: 0.5em;
           &:hover {
             cursor: pointer;
             color: rgb(43, 109, 184);
+          }
+        }
+      }
+    }
+    .menu-content {
+      // background-color: gray;
+      width: 55%;
+      .menu-header {
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+      }
+      .menu-list {
+        font-family: "Noto Serif", sans-serif;
+        .item {
+          display: flex;
+          justify-content: center;
+          .item-body {
+            width: 72%;
+            // background-color: red;
+            .sub-list {
+              padding-left: 1rem;
+              p:not(:last-child) {
+                margin-bottom: -0.2rem;
+              }
+            }
+          }
+          .price {
+            width: 20%;
+            text-align: right;
+            
           }
         }
       }

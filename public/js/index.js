@@ -4,3 +4,9 @@ $('#menu-btn').click(function() {
     block: "start"
   });
 });
+
+$('.list').on('click', function() {
+  let target = $(this).data('linked');
+  $(`#${target}`).show();
+  $(`#${target}`).siblings("div").hide();
+});
