@@ -175,6 +175,44 @@ html, body {
   text-align: right;
 }
 
+.bg-1 .main-menu .menu-content .menu-list .three-columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bg-1 .main-menu .menu-content .menu-list .three-columns .drink-type {
+  width: 50%;
+}
+
+.bg-1 .main-menu .menu-content .menu-list .three-columns .drink-type .sub-list {
+  padding-left: 1rem;
+}
+
+.bg-1 .main-menu .menu-content .menu-list .three-columns .drink-type .sub-list p:not(:last-child) {
+  margin-bottom: -0.2rem;
+}
+
+.bg-1 .main-menu .menu-content .menu-list .three-columns .size-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+}
+
+.bg-1 .main-menu .menu-content .menu-list .three-columns .size-price .small {
+  text-align: right;
+  width: 50%;
+}
+
+.bg-1 .main-menu .menu-content .menu-list .three-columns .size-price .large {
+  text-align: right;
+  width: 50%;
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
   :root {
     font-size: 80%;

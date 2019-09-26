@@ -127,7 +127,6 @@ html, body {
           justify-content: center;
           .item-body {
             width: 72%;
-            // background-color: red;
             .sub-list {
               padding-left: 1rem;
               p:not(:last-child) {
@@ -139,6 +138,35 @@ html, body {
             width: 20%;
             text-align: right;
             
+          }
+        }
+        .three-columns {
+          display: flex;
+          justify-content: center;
+          .drink-type {
+            width: 50%;
+            // background-color: gray;
+            .sub-list {
+              padding-left: 1rem;
+              p:not(:last-child) {
+                margin-bottom: -0.2rem;
+              }
+            }
+          }
+          .size-price {
+            display: flex;
+            width: 40%;
+            // background-color: red;
+            .small {
+              text-align: right;
+              width: 50%;
+              
+            }
+            .large {
+              // background-color: green;
+              text-align: right;
+              width: 50%;
+            }
           }
         }
       }
