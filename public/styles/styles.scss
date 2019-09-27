@@ -5,6 +5,8 @@ html, body {
   font-size: 100%;
 }
 
+// ======== top header ======= //
+
 .header {
   position: relative;
   height: 100vh;
@@ -34,7 +36,7 @@ html, body {
       width: 37rem;
       margin: auto;
       display: flex;
-      .business-time{
+      .business-time {
         text-align: left;
         color: white;
         font-size: 1rem;
@@ -78,6 +80,8 @@ html, body {
   }
 }
 
+// ======== bottom div ======= //
+
 .bg-1 {
   height: auto;
   min-height: 100vh;
@@ -89,7 +93,6 @@ html, body {
   .heading {
     color: rgb(68, 68, 68);
     font-weight: bold;
-    font-size: 2rem;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
   }
@@ -97,10 +100,11 @@ html, body {
     padding: 0;
     margin: 0;
     display: flex;
-    .side-bar {
+
+    .side-right-bar {
       font-family: "Noto Serif", sans-serif;
-      width: 23%;
-      // background-color: rgba(255, 192, 203, 0.698);
+      width: 25%;
+      // background-color: rgba(255, 192, 203, 0.904);
       .menu-category {
         list-style: none;
         .list {
@@ -113,9 +117,27 @@ html, body {
         }
       }
     }
+
+    .side-left-bar {
+      width: 25%;
+      // text-align: right;
+      // background: rgba(0, 128, 0, 0.65);
+      .direction {
+        text-align: center;
+        .btn {
+          font-family: 'Montserrat', sans-serif;
+          border-radius: 0;
+          box-shadow: none;
+          &:active {
+            box-shadow: none !important;
+          }
+        }
+      }
+    }
+
     .menu-content {
       // background-color: gray;
-      width: 55%;
+      width: 50%;
       .menu-header {
         text-align: center;
         font-family: 'Montserrat', sans-serif;
@@ -137,7 +159,6 @@ html, body {
           .price {
             width: 20%;
             text-align: right;
-            
           }
         }
         .three-columns {
@@ -145,7 +166,6 @@ html, body {
           justify-content: center;
           .drink-type {
             width: 50%;
-            // background-color: gray;
             .sub-list {
               padding-left: 1rem;
               p:not(:last-child) {
@@ -156,14 +176,11 @@ html, body {
           .size-price {
             display: flex;
             width: 40%;
-            // background-color: red;
             .small {
               text-align: right;
               width: 50%;
-              
             }
             .large {
-              // background-color: green;
               text-align: right;
               width: 50%;
             }
@@ -173,9 +190,6 @@ html, body {
     }
   }
 }
-
-
-
 
 @media (min-width: 320px) and (max-width: 767px) {
   :root {

@@ -104,7 +104,6 @@ html, body {
 .bg-1 .heading {
   color: #444444;
   font-weight: bold;
-  font-size: 2rem;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
@@ -117,27 +116,47 @@ html, body {
   display: flex;
 }
 
-.bg-1 .main-menu .side-bar {
+.bg-1 .main-menu .side-right-bar {
   font-family: "Noto Serif", sans-serif;
-  width: 23%;
+  width: 25%;
 }
 
-.bg-1 .main-menu .side-bar .menu-category {
+.bg-1 .main-menu .side-right-bar .menu-category {
   list-style: none;
 }
 
-.bg-1 .main-menu .side-bar .menu-category .list {
+.bg-1 .main-menu .side-right-bar .menu-category .list {
   font-size: 1.3rem;
   margin-bottom: 0.5em;
 }
 
-.bg-1 .main-menu .side-bar .menu-category .list:hover {
+.bg-1 .main-menu .side-right-bar .menu-category .list:hover {
   cursor: pointer;
   color: #2b6db8;
 }
 
+.bg-1 .main-menu .side-left-bar {
+  width: 25%;
+}
+
+.bg-1 .main-menu .side-left-bar .direction {
+  text-align: center;
+}
+
+.bg-1 .main-menu .side-left-bar .direction .btn {
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.bg-1 .main-menu .side-left-bar .direction .btn:active {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
 .bg-1 .main-menu .menu-content {
-  width: 55%;
+  width: 50%;
 }
 
 .bg-1 .main-menu .menu-content .menu-header {
