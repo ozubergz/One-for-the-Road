@@ -11,12 +11,6 @@ app.get("/", (req, res) => {
   res.render("home");
 });
 
-//Menu route
-app.get('/menu', (req, res) => {
-  res.render("menu");
-});
-
-
 //Start server
 app.listen(3000, function() {
   console.log("Server listening on port 3000.")

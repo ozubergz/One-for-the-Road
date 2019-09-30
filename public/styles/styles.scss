@@ -13,6 +13,7 @@ html, body {
   min-height: 100vh;
   background: gray;
   overflow: hidden;
+
   .bg-img {
     background-image: url("https://d2tmw454eqao4e.cloudfront.net/wood.jpeg");
     background-attachment: fixed;
@@ -21,6 +22,7 @@ html, body {
     background-size: cover;
     height: 100%;
   }
+
   .container-fluid {
     position: absolute;
     top: 50%;
@@ -28,27 +30,35 @@ html, body {
     transform: translate(-50%, -50%);
     text-align: center;
     padding: 0 !important;
+
     .logo-font {
       width: 37rem;
       margin-bottom: 1rem;
     }
+
     .logo-bottom {
       width: 37rem;
       margin: auto;
       display: flex;
+
       .business-time {
         text-align: left;
         color: white;
         font-size: 1rem;
         width: 50%;
+
         .title {
           font-size: 2rem;
           font-family: "Noto Serif", serif;
         }
+
         .table {
           color: white;
-          tr{
-            th, td {
+
+          tr {
+
+            th,
+            td {
               font-family: 'Montserrat', sans-serif;
               padding: 0 !important;
               margin: 0 !important;
@@ -56,6 +66,7 @@ html, body {
           }
         }
       }
+
       .call-info {
         font-size: 1.2rem;
         width: 50%;
@@ -63,9 +74,11 @@ html, body {
         text-align: right;
         color: white;
         font-family: "Noto Serif", sans-serif;
+
         .info {
           margin-bottom: -0.5em;
         }
+
         .btn {
           font-family: 'Montserrat', sans-serif;
           font-size: 1.2rem;
@@ -85,31 +98,25 @@ html, body {
 .bg-1 {
   height: auto;
   min-height: 100vh;
-  hr {
-    border-width: 3px;
-    border-color: rgb(68, 68, 68);
-    width: 50%;
-  }
-  .heading {
-    color: rgb(68, 68, 68);
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-  }
+
   .main-menu {
     padding: 0;
     margin: 0;
     display: flex;
 
-    .side-right-bar {
+    .side-left-bar {
       font-family: "Noto Serif", sans-serif;
       width: 25%;
-      // background-color: rgba(255, 192, 203, 0.904);
+
       .menu-category {
         list-style: none;
+        position: relative;
+        top: 100px;
+
         .list {
           font-size: 1.3rem;
           margin-bottom: 0.5em;
+
           &:hover {
             cursor: pointer;
             color: rgb(43, 109, 184);
@@ -118,71 +125,121 @@ html, body {
       }
     }
 
-    .side-left-bar {
+    .side-right-bar {
       width: 25%;
-      // text-align: right;
-      // background: rgba(0, 128, 0, 0.65);
-      .direction {
-        text-align: center;
-        .btn {
-          font-family: 'Montserrat', sans-serif;
-          border-radius: 0;
-          box-shadow: none;
-          &:active {
-            box-shadow: none !important;
+      font-size: 1rem;
+      // background-color: red;
+
+      .right-bar {
+        position: relative;
+        top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        .info {
+          display: flex;
+          width: 65%;
+          align-content: center;
+          margin-bottom: 1rem;
+          // background-color: gray;
+          
+          .fa-directions {
+            margin-top: 30px;
           }
         }
       }
     }
 
     .menu-content {
-      // background-color: gray;
       width: 50%;
+      color: rgb(68, 68, 68);
+      
+      .heading {
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        border-bottom: 2px solid rgb(68, 68, 68);
+      }
+
       .menu-header {
         text-align: center;
         font-family: 'Montserrat', sans-serif;
+        margin-bottom: 1rem;
       }
+
       .menu-list {
         font-family: "Noto Serif", sans-serif;
+
+        .flavors-list {
+          text-align: center;
+          font-size: 1.1rem;
+          font-weight: bold;
+        }
+
         .item {
           display: flex;
           justify-content: center;
+          margin-bottom: 0.5rem;
+
           .item-body {
             width: 72%;
+
+            .name {
+              font-size: 1.1rem;
+              font-weight: bold;
+            }
+
             .sub-list {
               padding-left: 1rem;
-              p:not(:last-child) {
-                margin-bottom: -0.2rem;
-              }
             }
           }
+
           .price {
             width: 20%;
             text-align: right;
+            font-size: 1.1rem;
+            font-weight: bold;
           }
         }
+
+        .ingredients {
+          font-weight: bold;
+        }
+
         .three-columns {
           display: flex;
           justify-content: center;
-          .drink-type {
+
+          .drink {
             width: 50%;
+            
+            .name {
+              font-size: 1.1rem;
+              font-weight: bold;
+            }
+
             .sub-list {
               padding-left: 1rem;
-              p:not(:last-child) {
-                margin-bottom: -0.2rem;
-              }
             }
           }
+
           .size-price {
             display: flex;
             width: 40%;
+
             .small {
               text-align: right;
               width: 50%;
+              font-size: 1.1rem;
+              font-weight: bold;
             }
+
             .large {
               text-align: right;
               width: 50%;
+              font-size: 1.1rem;
+              font-weight: bold;
             }
           }
         }
@@ -191,9 +248,25 @@ html, body {
   }
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
-  :root {
-    font-size: 80%;
+.bg-2 {
+  padding: 1rem;
+  height: auto;
+  min-height: 100vh;
+  // background-color: gray;
+  .gallery {
+    .photo-box {
+      height: 220px;
+      margin-bottom: 1rem;
+      .photo-box-img {
+        border-radius: 5px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+      };
+    }
   }
 }
+
 

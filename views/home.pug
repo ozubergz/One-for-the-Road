@@ -32,32 +32,86 @@ block content
                     div(class="info") 347 - 732 - 9732
                     div(class="info") Call In & Pick Up
                     div(class="info") Delivery ($25 up)
-                    button(class="btn btn-primary mb-2" id="menu-btn") See Menu
+                    button(class="btn btn-primary mb-3" id="menu-btn") See More
                     div(class='address') 40-25 150th Street
                     div(class='address') Flushing, NY 11354
+    
+    div(class="bg-2" id="bg-2")
+        div(class="container")
+            div(class="gallery")
+                div(class="row")
+                    div(class="col-md-3")
+                        div(class="photo-box")
+                            div(class="photo-box-img" style="background-image: url('https://d2tmw454eqao4e.cloudfront.net/o.jpg')")
+                    div(class="col-md-3")
+                        div(class="photo-box")
+                            div(class="photo-box-img" style="background-image: url('https://d2tmw454eqao4e.cloudfront.net/o+(9).jpg')")
+                    div(class="col-md-3")
+                        div(class="photo-box")
+                            div(class="photo-box-img" style="background-image: url('https://d2tmw454eqao4e.cloudfront.net/o+(8).jpg')")
+                    div(class="col-md-3")
+                        div(class="photo-box")
+                            div(class="photo-box-img" style="background-image: url('https://d2tmw454eqao4e.cloudfront.net/o+(7).jpg')")
+                div(class="row")
+                    div(class="col-md-3")
+                        div(class="photo-box")
+                            div(class="photo-box-img" style="background-image: url('https://d2tmw454eqao4e.cloudfront.net/o+(6).jpg')")
+                    div(class="col-md-3")
+                        div(class="photo-box")
+                            div(class="photo-box-img" style="background-image: url('https://d2tmw454eqao4e.cloudfront.net/o+(5).jpg')")
+                    div(class="col-md-3")
+                        div(class="photo-box")
+                            div(class="photo-box-img" style="background-image: url('https://d2tmw454eqao4e.cloudfront.net/o+(4).jpg')")
+                    div(class="col-md-3")
+                        div(class="photo-box")
+                            div(class="photo-box-img" style="background-image: url('https://d2tmw454eqao4e.cloudfront.net/o+(3).jpg')")
+                div(class="row")
+                    div(class="col-md-3")
+                        div(class="photo-box")
+                            div(class="photo-box-img" style="background-image: url('https://d2tmw454eqao4e.cloudfront.net/o+(15).jpg')")
+                    div(class="col-md-3")
+                        div(class="photo-box")
+                            div(class="photo-box-img" style="background-image: url('https://d2tmw454eqao4e.cloudfront.net/o+(14).jpg')")
+                    div(class="col-md-3")
+                        div(class="photo-box")
+                            div(class="photo-box-img" style="background-image: url('https://d2tmw454eqao4e.cloudfront.net/o+(17).jpg')")
+                    div(class="col-md-3")
+                        div(class="photo-box")
+                            div(class="photo-box-img" style="background-image: url('https://d2tmw454eqao4e.cloudfront.net/o+(16).jpg')")
+                div(class="row")
+                    div(class="col-md-3")
+                        div(class="photo-box")
+                            div(class="photo-box-img" style="background-image: url('https://d2tmw454eqao4e.cloudfront.net/o+(13).jpg')")
+                    div(class="col-md-3")
+                        div(class="photo-box")
+                            div(class="photo-box-img" style="background-image: url('https://d2tmw454eqao4e.cloudfront.net/o+(12).jpg')")
+                    div(class="col-md-3")
+                        div(class="photo-box")
+                            div(class="photo-box-img" style="background-image: url('https://d2tmw454eqao4e.cloudfront.net/o+(11).jpg')")
+                    div(class="col-md-3")
+                        div(class="photo-box")
+                            div(class="photo-box-img" style="background-image: url('https://d2tmw454eqao4e.cloudfront.net/o+(10).jpg')")
+                            
     div(class="bg-1" id="bg-1")
-        div(class="heading mt-2") 
-            h3 MENU
-        hr
-        div(class="main-menu mt-2")
-            div(class="side-right-bar mt-4")
-                include side-right-bar.pug
-            div(class="menu-content mt-4")
-                include menu/breakfast.pug
-                include menu/brunch.pug
-                include menu/hot-sandwiches.pug
-                include menu/cold-sandwiches.pug
-                include menu/salads.pug
-                include menu/peru-chicken.pug
-                include menu/crepes.pug
-                include menu/baked-goods.pug
-                include menu/ice-cream.pug
-                include menu/beverages.pug
-                include menu/smoothies.pug
-            div(class="side-left-bar mt-4")
-                include side-left-bar.pug
-
-            
-
+        div(class="main-menu container mx-auto")
+            div(class="side-left-bar")
+                include side-bar.pug
+            div(class="menu-content mt-3")
+                div(class="heading mb-4")
+                    h3 MENU
+                div
+                    include menu/breakfast.pug
+                    include menu/brunch.pug
+                    include menu/hot-sandwiches.pug
+                    include menu/cold-sandwiches.pug
+                    include menu/salads.pug
+                    include menu/peru-chicken.pug
+                    include menu/crepes.pug
+                    include menu/baked-goods.pug
+                    include menu/ice-cream.pug
+                    include menu/beverages.pug
+                    include menu/smoothies.pug
+            div(class="side-right-bar")
+                include right-bar.pug
             
 

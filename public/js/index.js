@@ -1,5 +1,5 @@
 $('#menu-btn').click(function() {
-  $("#bg-1")[0].scrollIntoView({
+  $("#bg-2")[0].scrollIntoView({
     behavior: 'smooth',
     block: "start"
   });

@@ -60,7 +60,8 @@ html, body {
   color: white;
 }
 
-.header .container-fluid .logo-bottom .business-time .table tr th, .header .container-fluid .logo-bottom .business-time .table tr td {
+.header .container-fluid .logo-bottom .business-time .table tr th,
+.header .container-fluid .logo-bottom .business-time .table tr td {
   font-family: 'Montserrat', sans-serif;
   padding: 0 !important;
   margin: 0 !important;
@@ -95,19 +96,6 @@ html, body {
   min-height: 100vh;
 }
 
-.bg-1 hr {
-  border-width: 3px;
-  border-color: #444444;
-  width: 50%;
-}
-
-.bg-1 .heading {
-  color: #444444;
-  font-weight: bold;
-  font-family: 'Montserrat', sans-serif;
-  text-align: center;
-}
-
 .bg-1 .main-menu {
   padding: 0;
   margin: 0;
@@ -116,56 +104,87 @@ html, body {
   display: flex;
 }
 
-.bg-1 .main-menu .side-right-bar {
+.bg-1 .main-menu .side-left-bar {
   font-family: "Noto Serif", sans-serif;
   width: 25%;
 }
 
-.bg-1 .main-menu .side-right-bar .menu-category {
+.bg-1 .main-menu .side-left-bar .menu-category {
   list-style: none;
+  position: relative;
+  top: 100px;
 }
 
-.bg-1 .main-menu .side-right-bar .menu-category .list {
+.bg-1 .main-menu .side-left-bar .menu-category .list {
   font-size: 1.3rem;
   margin-bottom: 0.5em;
 }
 
-.bg-1 .main-menu .side-right-bar .menu-category .list:hover {
+.bg-1 .main-menu .side-left-bar .menu-category .list:hover {
   cursor: pointer;
   color: #2b6db8;
 }
 
-.bg-1 .main-menu .side-left-bar {
+.bg-1 .main-menu .side-right-bar {
   width: 25%;
+  font-size: 1rem;
 }
 
-.bg-1 .main-menu .side-left-bar .direction {
-  text-align: center;
+.bg-1 .main-menu .side-right-bar .right-bar {
+  position: relative;
+  top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
-.bg-1 .main-menu .side-left-bar .direction .btn {
-  font-family: 'Montserrat', sans-serif;
-  border-radius: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+.bg-1 .main-menu .side-right-bar .right-bar .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 65%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-bottom: 1rem;
 }
 
-.bg-1 .main-menu .side-left-bar .direction .btn:active {
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+.bg-1 .main-menu .side-right-bar .right-bar .info .fa-directions {
+  margin-top: 30px;
 }
 
 .bg-1 .main-menu .menu-content {
   width: 50%;
+  color: #444444;
+}
+
+.bg-1 .main-menu .menu-content .heading {
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  border-bottom: 2px solid #444444;
 }
 
 .bg-1 .main-menu .menu-content .menu-header {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
+  margin-bottom: 1rem;
 }
 
 .bg-1 .main-menu .menu-content .menu-list {
   font-family: "Noto Serif", sans-serif;
+}
+
+.bg-1 .main-menu .menu-content .menu-list .flavors-list {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 
 .bg-1 .main-menu .menu-content .menu-list .item {
@@ -175,23 +194,31 @@ html, body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 0.5rem;
 }
 
 .bg-1 .main-menu .menu-content .menu-list .item .item-body {
   width: 72%;
 }
 
-.bg-1 .main-menu .menu-content .menu-list .item .item-body .sub-list {
-  padding-left: 1rem;
+.bg-1 .main-menu .menu-content .menu-list .item .item-body .name {
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 
-.bg-1 .main-menu .menu-content .menu-list .item .item-body .sub-list p:not(:last-child) {
-  margin-bottom: -0.2rem;
+.bg-1 .main-menu .menu-content .menu-list .item .item-body .sub-list {
+  padding-left: 1rem;
 }
 
 .bg-1 .main-menu .menu-content .menu-list .item .price {
   width: 20%;
   text-align: right;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.bg-1 .main-menu .menu-content .menu-list .ingredients {
+  font-weight: bold;
 }
 
 .bg-1 .main-menu .menu-content .menu-list .three-columns {
@@ -203,16 +230,17 @@ html, body {
           justify-content: center;
 }
 
-.bg-1 .main-menu .menu-content .menu-list .three-columns .drink-type {
+.bg-1 .main-menu .menu-content .menu-list .three-columns .drink {
   width: 50%;
 }
 
-.bg-1 .main-menu .menu-content .menu-list .three-columns .drink-type .sub-list {
-  padding-left: 1rem;
+.bg-1 .main-menu .menu-content .menu-list .three-columns .drink .name {
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 
-.bg-1 .main-menu .menu-content .menu-list .three-columns .drink-type .sub-list p:not(:last-child) {
-  margin-bottom: -0.2rem;
+.bg-1 .main-menu .menu-content .menu-list .three-columns .drink .sub-list {
+  padding-left: 1rem;
 }
 
 .bg-1 .main-menu .menu-content .menu-list .three-columns .size-price {
@@ -225,16 +253,34 @@ html, body {
 .bg-1 .main-menu .menu-content .menu-list .three-columns .size-price .small {
   text-align: right;
   width: 50%;
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 
 .bg-1 .main-menu .menu-content .menu-list .three-columns .size-price .large {
   text-align: right;
   width: 50%;
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
-  :root {
-    font-size: 80%;
-  }
+.bg-2 {
+  padding: 1rem;
+  height: auto;
+  min-height: 100vh;
+}
+
+.bg-2 .gallery .photo-box {
+  height: 220px;
+  margin-bottom: 1rem;
+}
+
+.bg-2 .gallery .photo-box .photo-box-img {
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
 }
 /*# sourceMappingURL=styles.css.map */
