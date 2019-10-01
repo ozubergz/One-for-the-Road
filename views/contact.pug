@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  div(class="form-wrapper")
+    div(class="form-modal")
+      div(class="logo-placeholder mb-5")
+        img(class="form-logo" src="https://d2tmw454eqao4e.cloudfront.net/header-logo.png")
+      form
+        div(class="form-group")
+          label(for="input-email") Email:
+          input(type="email" class="form-control" id="input-email" aria-describedby="emailHelp")
+        div(class="form-group")
+          label(for="input-subject") Subject:
+          input(type="text" class="form-control" id="input-subject")
+        div(class="form-group")
+          label(for="input-textarea") Message:
+          textarea(class="form-control" id="input-textarea" rows="5")
+        button(type="submit" class="btn btn-success") Submit

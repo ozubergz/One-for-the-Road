@@ -91,7 +91,33 @@ html, body {
           box-shadow: none;
 }
 
+.bg-2 {
+  position: relative;
+  padding: 1rem;
+  height: auto;
+  min-height: 100vh;
+}
+
+.bg-2 .gallery .photo-box {
+  height: 210px;
+  margin-bottom: 1rem;
+}
+
+.bg-2 .gallery .photo-box .photo-box-img {
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+
+.bg-2 .gallery .photo-box .photo-box-img:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
 .bg-1 {
+  position: relative;
   height: auto;
   min-height: 100vh;
 }
@@ -143,6 +169,13 @@ html, body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+
+.bg-1 .main-menu .side-right-bar .right-bar .contact .btn {
+  border-radius: 0 !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
 }
 
 .bg-1 .main-menu .side-right-bar .right-bar .info {
@@ -264,23 +297,104 @@ html, body {
   font-weight: bold;
 }
 
-.bg-2 {
-  padding: 1rem;
-  height: auto;
-  min-height: 100vh;
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
-.bg-2 .gallery .photo-box {
-  height: 220px;
-  margin-bottom: 1rem;
-}
-
-.bg-2 .gallery .photo-box .photo-box-img {
-  border-radius: 5px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 100%;
+.lightbox .inner-lightbox {
   width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.lightbox .inner-lightbox .img-placeholder {
+  position: relative;
+  height: 100%;
+}
+
+.lightbox .inner-lightbox .img-placeholder img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+.lightbox .inner-lightbox .img-placeholder .lightbox-close {
+  position: absolute;
+  border-radius: 5px;
+  right: 0;
+  color: white;
+  line-height: 1.1em;
+  background-color: black;
+  display: inline-block;
+  padding: 0.3em;
+}
+
+.lightbox .inner-lightbox .img-placeholder .lightbox-close:hover {
+  cursor: pointer;
+  color: gray;
+}
+
+.lightbox .inner-lightbox .img-placeholder .lightbox-close .close-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  margin-right: 0.5em;
+  font-weight: bold;
+}
+
+.form-wrapper {
+  position: relative;
+  height: 100vh;
+  min-height: 100vh;
+  background-image: url("https://d2tmw454eqao4e.cloudfront.net/wood.jpeg");
+}
+
+.form-wrapper .form-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 1rem;
+  width: 35%;
+}
+
+.form-wrapper .form-modal .logo-placeholder {
+  margin: auto;
+  width: 60%;
+}
+
+.form-wrapper .form-modal .logo-placeholder img {
+  width: 100%;
+}
+
+.form-wrapper .form-modal form {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.form-wrapper .form-modal form input, .form-wrapper .form-modal form textarea {
+  border-radius: 0;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.form-wrapper .form-modal form label {
+  font-size: 0.8rem;
+}
+
+.form-wrapper .form-modal form .btn {
+  width: 100%;
+  border-radius: 0;
 }
 /*# sourceMappingURL=styles.css.map */

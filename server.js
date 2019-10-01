@@ -11,6 +11,10 @@ app.get("/", (req, res) => {
   res.render("home");
 });
 
+app.get("/contact", (req, res) => {
+  res.render("contact");
+});
+
 //Start server
 app.listen(3000, function() {
   console.log("Server listening on port 3000.")
