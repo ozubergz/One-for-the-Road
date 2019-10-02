@@ -1,3 +1,7 @@
+$(window).on('beforeunload', function() {
+  $(this).scrollTop(0);
+});
+
 $('#menu-btn').click(function() {
   $("#bg-2")[0].scrollIntoView({
     behavior: 'smooth',

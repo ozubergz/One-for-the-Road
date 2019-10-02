@@ -71,6 +71,7 @@ html, body {
         font-size: 1.2rem;
         width: 50%;
         padding-top: 0.6em;
+        
         text-align: right;
         color: white;
         font-family: "Noto Serif", sans-serif;
@@ -83,6 +84,7 @@ html, body {
           font-family: 'Montserrat', sans-serif;
           font-size: 1.2rem;
           margin-top: 1em;
+          margin-bottom: 0.7em;
           width: 8.7em;
           border-radius: 0;
           border: none;
@@ -98,8 +100,6 @@ html, body {
 .bg-2 {
   position: relative;
   padding: 1rem;
-  height: auto;
-  min-height: 100vh;
   
   .gallery {
 
@@ -127,26 +127,26 @@ html, body {
 
 .bg-1 {
   position: relative;
-  height: auto;
-  min-height: 100vh;
 
   .main-menu {
-    padding: 0;
-    margin: 0;
-    display: flex;
+
+    .heading {
+      font-weight: bold;
+      font-family: 'Montserrat', sans-serif;
+      text-align: center;
+    }
 
     .side-left-bar {
+      position: relative;
       font-family: "Noto Serif", sans-serif;
-      width: 25%;
 
       .menu-category {
         list-style: none;
-        position: relative;
-        top: 100px;
+        padding-left: 0;
 
         .list {
           font-size: 1.3rem;
-          margin-bottom: 0.5em;
+          margin-bottom: 0.4em;
 
           &:hover {
             cursor: pointer;
@@ -157,47 +157,34 @@ html, body {
     }
 
     .side-right-bar {
-      width: 25%;
+      position: relative;
       font-size: 1rem;
 
       .right-bar {
-        position: relative;
-        top: 100px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
+        position: absolute;
+        right: 15px;
 
-        .contact {
+        .address {
+          display: flex;
+          align-items: center;
+        }
+
+        .info {
+          margin-bottom: 0.8rem;
+
           .btn {
             border-radius: 0 !important;
             box-shadow: none;
             border: none;
           }
         }
-
-        .info {
-          display: flex;
-          width: 65%;
-          align-content: center;
-          margin-bottom: 1rem;
-          
-          .fa-directions {
-            margin-top: 30px;
-          }
-        }
       }
     }
 
     .menu-content {
-      width: 50%;
+      position: relative;
       color: rgb(68, 68, 68);
-      
-      .heading {
-        font-weight: bold;
-        font-family: 'Montserrat', sans-serif;
-        text-align: center;
-        border-bottom: 2px solid rgb(68, 68, 68);
-      }
+      border-top: 1px solid black;
 
       .menu-header {
         text-align: center;
@@ -299,7 +286,6 @@ html, body {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    // background-color: black;
     
     .img-placeholder {
       position: relative;
@@ -323,6 +309,7 @@ html, body {
         background-color: rgb(0, 0, 0);
         display: inline-block;
         padding: 0.3em;
+        z-index: 1;
         
         &:hover {
           cursor: pointer;
@@ -344,7 +331,6 @@ html, body {
   position: relative;
   height: 100vh;
   min-height: 100vh;
-  // background-color: gray;
   background-image: url("https://d2tmw454eqao4e.cloudfront.net/wood.jpeg");
 
   .form-modal {
@@ -352,7 +338,6 @@ html, body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    // background-color: rgba(0, 0, 0, 0.6);
     padding: 1rem;
     width: 35%;
     
@@ -382,6 +367,78 @@ html, body {
       .btn {
         width: 100%;
         border-radius: 0;
+      }
+
+    }
+  }
+}
+
+footer {
+  margin-top: 3rem;
+  color: rgb(92, 92, 92);
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  :root {
+    font-size: 80%;
+  }
+
+  .header {
+
+    .container-fluid {
+
+      .logo-font {
+        width: 25rem;
+      }
+
+      .logo-bottom {
+        width: 25rem;
+
+        .business-time {
+          font-size: 0.9rem;
+
+          .title {
+            font-size: 1.5rem;
+          }
+        }
+
+        .call-info {
+          font-size: 1rem;
+
+          .btn {
+            font-size: 1rem;
+            margin-top: 0.8em;
+            margin-bottom: 0.8em;
+          }
+        }
+      }
+    }
+  }
+
+  .bg-1 {
+    position: relative;
+
+    .main-menu {
+
+      .side-left-bar {
+        text-align: center;
+      }
+
+      .side-right-bar {
+        margin-top: 2rem;
+        text-align: center;
+        
+        .right-bar {
+          position: static;
+
+          .address {
+            justify-content: center;
+          }
+        }
+      }
+
+      .menu-content {
+        padding-top: 1rem;
       }
 
     }

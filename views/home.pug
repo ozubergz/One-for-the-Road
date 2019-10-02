@@ -32,7 +32,7 @@ block content
                     div(class="info") 347 - 732 - 9732
                     div(class="info") Call In & Pick Up
                     div(class="info") Delivery ($25 up)
-                    button(class="btn btn-primary mb-3" id="menu-btn") See More
+                    button(class="btn btn-primary" id="menu-btn") See More
                     div(class='address') 40-25 150th Street
                     div(class='address') Flushing, NY 11354
     
@@ -93,27 +93,29 @@ block content
                             div(class="photo-box-img" style="background-image: url('https://d2tmw454eqao4e.cloudfront.net/o+(10).jpg')")
 
     div(class="bg-1" id="bg-1")
-        div(class="main-menu container mx-auto")
-            div(class="side-left-bar")
-                include side-bar.pug
-            div(class="menu-content mt-3")
-                div(class="heading mb-4")
-                    h3 MENU
-                div
-                    include menu/breakfast.pug
-                    include menu/brunch.pug
-                    include menu/hot-sandwiches.pug
-                    include menu/cold-sandwiches.pug
-                    include menu/salads.pug
-                    include menu/peru-chicken.pug
-                    include menu/crepes.pug
-                    include menu/baked-goods.pug
-                    include menu/ice-cream.pug
-                    include menu/beverages.pug
-                    include menu/smoothies.pug
-            div(class="side-right-bar")
-                include right-bar.pug
-    
+        div(class="main-menu")
+            div(class="heading")
+                h3 MENU
+            div(class="container mt-3")
+                div(class="row")
+                    div(class="side-left-bar col-md-3")
+                        include side-bar.pug
+                    div(class="menu-content col-md-6")
+                        div
+                            include menu/breakfast.pug
+                            include menu/brunch.pug
+                            include menu/hot-sandwiches.pug
+                            include menu/cold-sandwiches.pug
+                            include menu/salads.pug
+                            include menu/peru-chicken.pug
+                            include menu/crepes.pug
+                            include menu/baked-goods.pug
+                            include menu/ice-cream.pug
+                            include menu/beverages.pug
+                            include menu/smoothies.pug
+                    div(class="side-right-bar col-md-3")
+                        include right-bar.pug
+
     div(class="lightbox")
         div(class="inner-lightbox")
             div(class="img-placeholder")
@@ -121,6 +123,9 @@ block content
                     span(class="close-text") Close
                     span(class="close-icon")
                         i(class="fas fa-times fa-lg")
+
+    footer(class="font-smaller mt-5")
+      div(class="copy-right text-center py-2") © 2019-2020 One for the Road
                     
                     
                         

@@ -84,6 +84,7 @@ html, body {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.2rem;
   margin-top: 1em;
+  margin-bottom: 0.7em;
   width: 8.7em;
   border-radius: 0;
   border: none;
@@ -94,8 +95,6 @@ html, body {
 .bg-2 {
   position: relative;
   padding: 1rem;
-  height: auto;
-  min-height: 100vh;
 }
 
 .bg-2 .gallery .photo-box {
@@ -118,32 +117,27 @@ html, body {
 
 .bg-1 {
   position: relative;
-  height: auto;
-  min-height: 100vh;
 }
 
-.bg-1 .main-menu {
-  padding: 0;
-  margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.bg-1 .main-menu .heading {
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
 }
 
 .bg-1 .main-menu .side-left-bar {
+  position: relative;
   font-family: "Noto Serif", sans-serif;
-  width: 25%;
 }
 
 .bg-1 .main-menu .side-left-bar .menu-category {
   list-style: none;
-  position: relative;
-  top: 100px;
+  padding-left: 0;
 }
 
 .bg-1 .main-menu .side-left-bar .menu-category .list {
   font-size: 1.3rem;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.4em;
 }
 
 .bg-1 .main-menu .side-left-bar .menu-category .list:hover {
@@ -152,56 +146,39 @@ html, body {
 }
 
 .bg-1 .main-menu .side-right-bar {
-  width: 25%;
+  position: relative;
   font-size: 1rem;
 }
 
 .bg-1 .main-menu .side-right-bar .right-bar {
-  position: relative;
-  top: 100px;
+  position: absolute;
+  right: 15px;
+}
+
+.bg-1 .main-menu .side-right-bar .right-bar .address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.bg-1 .main-menu .side-right-bar .right-bar .contact .btn {
+.bg-1 .main-menu .side-right-bar .right-bar .info {
+  margin-bottom: 0.8rem;
+}
+
+.bg-1 .main-menu .side-right-bar .right-bar .info .btn {
   border-radius: 0 !important;
   -webkit-box-shadow: none;
           box-shadow: none;
   border: none;
 }
 
-.bg-1 .main-menu .side-right-bar .right-bar .info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 65%;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  margin-bottom: 1rem;
-}
-
-.bg-1 .main-menu .side-right-bar .right-bar .info .fa-directions {
-  margin-top: 30px;
-}
-
 .bg-1 .main-menu .menu-content {
-  width: 50%;
+  position: relative;
   color: #444444;
-}
-
-.bg-1 .main-menu .menu-content .heading {
-  font-weight: bold;
-  font-family: 'Montserrat', sans-serif;
-  text-align: center;
-  border-bottom: 2px solid #444444;
+  border-top: 1px solid black;
 }
 
 .bg-1 .main-menu .menu-content .menu-header {
@@ -337,6 +314,7 @@ html, body {
   background-color: black;
   display: inline-block;
   padding: 0.3em;
+  z-index: 1;
 }
 
 .lightbox .inner-lightbox .img-placeholder .lightbox-close:hover {
@@ -396,5 +374,57 @@ html, body {
 .form-wrapper .form-modal form .btn {
   width: 100%;
   border-radius: 0;
+}
+
+footer {
+  margin-top: 3rem;
+  color: #5c5c5c;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  :root {
+    font-size: 80%;
+  }
+  .header .container-fluid .logo-font {
+    width: 25rem;
+  }
+  .header .container-fluid .logo-bottom {
+    width: 25rem;
+  }
+  .header .container-fluid .logo-bottom .business-time {
+    font-size: 0.9rem;
+  }
+  .header .container-fluid .logo-bottom .business-time .title {
+    font-size: 1.5rem;
+  }
+  .header .container-fluid .logo-bottom .call-info {
+    font-size: 1rem;
+  }
+  .header .container-fluid .logo-bottom .call-info .btn {
+    font-size: 1rem;
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+  }
+  .bg-1 {
+    position: relative;
+  }
+  .bg-1 .main-menu .side-left-bar {
+    text-align: center;
+  }
+  .bg-1 .main-menu .side-right-bar {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .bg-1 .main-menu .side-right-bar .right-bar {
+    position: static;
+  }
+  .bg-1 .main-menu .side-right-bar .right-bar .address {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .bg-1 .main-menu .menu-content {
+    padding-top: 1rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
